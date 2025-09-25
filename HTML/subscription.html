@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/navbarfooter.css">
+    <link rel="stylesheet" href="../CSS/subscription.css">
+    <title>Asphatl 9: ReJends | Subscription</title>
+</head>
+<body>
+    <div id="container">
+        <div id="navigationBar">
+            <nav>
+                <a id="logo" href="home.html"><img id="image" src="../ASSETS/A9_Logo_Transparent.png" alt="A9 Logo"></a>
+                <a class="navButton" href="home.html">Home</a>
+                <a class="navButton" href="products.html">Products</a>
+                <a class="navButton" href="news.html">News</a>
+                <a class="navButton" href="esports.html">E-Sport</a>
+                <a class="navButton" href="subscription.html">Subscription</a>
+            </nav>
+        </div>
+        <div>
+            <header id="title">SUBSCRIBE TO OUR NEWS!</header>
+        </div>
+        <div id="formContainer">
+            <form id="subscriptionForm">
+                    <div class="inputMargin">
+                        <input type="text" id="fullName" class="inputBox" placeholder="FULLNAME" name="Full Name">
+                        <br>
+                        <span class="error" id="nameError"></span>
+                    </div>
+                    <div class="inputMargin">
+                        <input type="text" id="email" class="inputBox" placeholder="EMAIL" name="Email">
+                        <span class="error" id="emailError"></span>
+                    </div>
+                    <div class="inputMargin">
+                        <label for="birthday">Birthday</label>
+                        <br>
+                        <input type="date" id="birthDate" class="inputBox" name="Birthday">
+                        <br>
+                        <span class="error" id="dateError"></span>
+                    </div>
+                    <div class="inputMargin">
+                        <label for="gender" >Male</label>
+                        <input type="radio" class="radioButton" name="gender" value="male">
+                        <label for="gender" id="femaleGender">Female</label>
+                        <input type="radio" class="radioButton" name="gender" value="female">
+                        <br>
+                        <span class="error" id="genderError"></span>
+                    </div>
+                    <div class="inputMargin">
+                        <input type="checkbox" id="terms" name="terms">
+                        <label for="terms">I agree to the Terms and Conditions</label>
+                        <br>
+                        <span class="error" id="termsError"></span>
+                    </div>
+                    <div id="registerContainer" class="inputMargin">
+                        <input type="submit" id="registerButton" value="REGISTER">
+                    </div>
+            </form>
+        </div>
+    </div>
+    <footer>© 2024 Gamefolt. All Rights Reserved.</footer>
+    <script src="../JS/navbarScroll.js"></script>
+    <script src="../JS/subscription.js"></script>
+</body>
+</html>

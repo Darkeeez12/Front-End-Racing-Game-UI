@@ -1,0 +1,94 @@
+html, body
+{   
+    margin: 0; 
+    height: 100%;
+    background-image: url(../ASSETS/Car\ Background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container
+{
+    min-height: 100%;
+    margin-bottom: -30px;
+    width: 100%;
+    text-align: center;
+}
+
+#logoContainer, #information
+{
+    text-align: center;
+}
+
+#logoBanner
+{
+    margin-top: 150px;
+    margin-bottom: 40px;
+    width: 400px;
+    height: auto;
+}
+
+#overviewContainer
+{
+    width: 60%;
+    margin: auto;
+}
+
+#overview
+{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+#overview img
+{
+    height: 230px;
+}
+
+#overview p
+{
+    padding-left: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 20px;
+    width: auto;
+    font-size: 23px;
+    font-weight: 100;
+    color: white;
+}
+
+#information
+{
+    margin: 100px 10% 60px 10%;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: rgba(151, 36, 36, 0.8);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1200px)
+{
+    #overviewContainer
+    {
+        width: 80%;
+    }
+    
+    #overview
+    {
+        padding: auto 100px auto 100px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    #overview
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+}

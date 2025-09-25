@@ -1,0 +1,116 @@
+html, body 
+{
+    margin: 0;
+    height: 100%;
+    background-image: url(../ASSETS/Car\ Background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container 
+{
+    min-height: 100%;
+    margin-bottom: -30px;
+}
+
+#title 
+{
+    padding: 110px 100px 0 100px;
+    font-family: "Orbitron", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #DC143C;
+    -webkit-text-stroke: 2px black;
+}
+
+#formContainer 
+{
+    border: 2px solid black;
+    margin: 30px 26% 60px 26%;
+    border-radius: 8px;
+}
+
+form 
+{
+    padding: 20px 8%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 0, 0, 0.7);
+    font-family: "Orbitron", sans-serif;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+.inputMargin 
+{
+    margin: 10px;
+}
+
+.inputBox 
+{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+#femaleGender 
+{
+    margin-left: 8px;
+}
+
+.radioButton 
+{
+    transform: scale(2);
+    cursor: pointer;
+}
+
+#terms
+{
+    transform: scale(2);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#registerContainer 
+{
+    text-align: center;
+}
+
+#registerButton 
+{
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #7d7d7d, #3d3d53);
+    color: black;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 0 10px rgba(255, 30, 86, 0.5), 0 0 20px rgba(139, 139, 139, 0.3);
+}
+
+#registerButton:hover 
+{
+    background: linear-gradient(45deg, #989898, #565656);
+    box-shadow: 0 0 20px rgba(139, 0, 0, 0.7), 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.error 
+{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 768px) 
+{
+    #title 
+    {
+        padding-top: 300px;
+    }
+}

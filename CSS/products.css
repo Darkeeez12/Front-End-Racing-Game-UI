@@ -1,0 +1,112 @@
+html, body
+{   
+    margin: 0; 
+    height: 100%;
+    background-image: url(../ASSETS/Products_Background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container
+{
+    min-height: 100%;
+    margin-bottom: -30px;
+    width: 100%;
+}
+
+#carImagesContainer
+{
+    width: 100%;
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tiers
+{
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#classTitle
+{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    font-family: "Orbitron", sans-serif;
+    font-size: 30px;
+    color: #DC143C;
+    -webkit-text-stroke: 1px black;
+}    
+
+.carBorder
+{
+    border: 2px solid black; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carBorder:hover 
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.carBorder p
+{
+    width: 100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    font-size: 15px;
+    color: white;
+    padding: 5px 0;
+}
+
+.tiers img
+{
+    width: 240px;
+}
+
+@media screen and (max-width: 768px) 
+{
+    #container 
+    {
+        padding-top: 150px;
+    }
+
+    .tiers 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #classTitle 
+    {
+        max-width: 248px;
+        text-align: center;
+        font-size: 30px;
+        color: #DC143C;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .carBorder 
+    {
+        text-align: center;
+        width: 90%;
+    }
+
+    .tiers img 
+    {
+        width: 100%;
+    }
+}

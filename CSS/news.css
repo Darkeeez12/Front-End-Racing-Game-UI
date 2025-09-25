@@ -1,0 +1,130 @@
+html, body
+{   
+    margin: 0; 
+    height: 100%;
+    background-image: url(../ASSETS/Car\ Background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container
+{
+    min-height: 100%;
+    margin-bottom: -30px;
+}
+
+#newsTitle
+{
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    color: #DC143C;
+}
+
+#newsTitle header
+{
+    padding: 110px 300px 0px 300px;
+    font-size: 40px;
+    -webkit-text-stroke: 2px black;
+}
+
+#newsTitle p
+{
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#imageContainer
+{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div img
+{
+    width: 500px;
+}
+
+.news
+{
+    width: 500px;
+    height: 570px;
+    margin-bottom: 20px;
+    text-align: justify;
+    border: 6px solid black;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+#red
+{
+    border-top: 10px solid red;
+}
+
+#yellow
+{
+    border-top: 10px solid yellow   ;
+}
+
+.news p
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.publishDate
+{
+    margin-top: 8px;
+    margin-left: 15px;
+    font-size: 15px;
+    color: #DC143C;
+}
+
+.title
+{
+    margin-top: 8px;
+    margin-left: 15px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+}
+
+.preview
+{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 18px;
+    min-height: 130px;
+    color: white;
+}
+
+.readTime
+{
+    margin-left: 420px;
+    margin-bottom: 2px;
+    max-width: 80px;
+    font-size: 16px;
+    color: #DC143C;
+}
+
+@media screen and (max-width: 768px)
+{
+
+    #newsTitle header
+    {
+        padding: 300px 20px 20px 20px;
+    }
+
+    #imageContainer
+    {
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+}
